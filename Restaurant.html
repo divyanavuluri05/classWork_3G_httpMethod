@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism - Restaurants</title>
+    <link rel="stylesheet" href="./assessts/CSS/Restaurant.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">INDIA</div>
+        <ul class="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./flights.html">Flights</a></li>
+            <li><a href="./Plan.html">Plan Your Trip</a></li>
+            <li><a href="./hotels.html">Hotels</a></li>
+            <li><a href="./restaurants.html">Restaurants</a></li>
+            <li><a href="./map.html">India Map</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Restaurants in India</h1>
+            
+            <div class="search-container">
+                <input type="text" id="locationSearch" placeholder="Enter city or state">
+                <button onclick="searchRestaurants()">Search</button>
+            </div>
+    
+            <div id="loading">Searching for restaurants...</div>
+            <div id="restaurantList"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 India Tourism Assist. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./assessts/js/Restaurant.js"></script>
+</body>
+</html>

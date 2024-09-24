@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism - Flights</title>
+    <link rel="stylesheet" href="./assessts/CSS/flights.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">INDIA</div>
+        <ul class="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./flights.html">Flights</a></li>
+            <li><a href="./Plan.html">Plan Your Trip</a></li>
+            <li><a href="./Restaurant.html">Restaurants</a></li>
+            <li><a href="./map.html">India Map</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Flights within India</h1>
+    <form id="search-form">
+        <label for="from-airport">From:</label>
+        <select id="from-airport" required>
+            <option value="">Select departure airport</option>
+        </select>
+
+        <label for="to-airport">To:</label>
+        <select id="to-airport" required>
+            <option value="">Select arrival airport</option>
+        </select>
+
+        <label for="flight-date">Date:</label>
+        <input type="date" id="flight-date" required>
+
+        <button type="submit">Search Flights</button>
+    </form>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id="error" style="display: none;"></div>
+    <div id="flights-list"></div>
+    <footer>
+        <p>&copy; 2024 India Tourism Assist. All Rights Reserved.</p>
+    </footer>
+    <script src="./assessts/js/flights.js"></script>
+</body>
+</html>
